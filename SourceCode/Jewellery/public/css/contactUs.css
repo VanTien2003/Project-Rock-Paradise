@@ -1,0 +1,165 @@
+* {
+  transition: all 200ms ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-wrapper {
+  max-width: 1430px !important;
+}
+
+.banner-page {
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-image: url(../images/banner/banner-aboutContact.jpg);
+}
+
+.banner-page .title-page h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: darkturquoise;
+  position: relative;
+  padding: .5rem;
+}
+
+.banner-page .title-page h2::before {
+  content: "";
+  height: 1px;
+  width: 74px;
+  position: absolute;
+  left: 50%;
+  bottom: -15%;
+  transform: translate(-50%);
+  background: #555555;
+}
+
+.banner-page .bread-crumb {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.banner-page .bread-crumb a {
+  text-transform: uppercase;
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.banner-page .bread-crumb a i {
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.banner-page .bread-crumb a:hover {
+  text-decoration: none;
+  color: #ecad25;
+}
+
+.banner-page .bread-crumb strong {
+  text-transform: uppercase;
+  color: darkturquoise;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-page {
+  width: 100%;
+  padding: 60px 0 50px 0;
+}
+
+.contact-form .contact-form-page .contact-form .contact-name input,
+.contact-form .contact-form-page .contact-form .contact-email input,
+.contact-form .contact-form-page .contact-form .contact-phone input,
+.contact-form .contact-form-page .contact-form .contact-subject input {
+  border-radius: 0;
+  border: 1px solid #ebebeb;
+  width: 100%;
+  background-color: transparent;
+  padding: 15px 15px 15px 25px;
+}
+
+.contact-form .contact-form-page .contact-form .contact-message textarea {
+  border-radius: 0;
+  border: 1px solid #ebebeb;
+  width: 100%;
+  background-color: transparent;
+  padding: 15px 15px 15px 25px;
+}
+
+.contact-form .contact-form-page .contact-form .contact-submit input {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 18px 65px;
+  border-radius: 0;
+  border: none;
+  background-color: #000;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.address-shop .shop-name {
+  font-size: 24px;
+  color: #000;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-style: normal;
+}
+
+.address-shop .shop-address,
+.info-shop .content {
+  font-family: Lato;
+  font-size: 17px;
+  color: #a8a8a8;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.address-shop .shop-address>a {
+  color: #a8a8a8;
+  text-decoration: none;
+}
+
+.address-shop .shop-address>a:hover {
+  color: rgb(142, 136, 136);
+  text-decoration: none;
+}
+
+.info-shop .title {
+  font-size: 18px;
+  color: #000;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 500;
+  font-style: normal;
+}

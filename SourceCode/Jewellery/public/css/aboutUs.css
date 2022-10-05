@@ -1,0 +1,288 @@
+* {
+  transition: all 200ms ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-wrapper {
+  max-width: 1430px !important;
+}
+
+.banner-page {
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-image: url(../images/banner/banner-aboutContact.jpg);
+}
+
+.banner-page .title-page h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: forestgreen;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.banner-page .title-page h2::before {
+  content: "";
+  height: 1px;
+  width: 74px;
+  position: absolute;
+  left: 50%;
+  bottom: -15%;
+  transform: translate(-50%);
+  background: #555555;
+}
+
+.banner-page .bread-crumb {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.banner-page .bread-crumb a {
+  text-transform: uppercase;
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.banner-page .bread-crumb a i {
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.banner-page .bread-crumb a:hover {
+  text-decoration: none;
+  color: #ecad25;
+}
+
+.banner-page .bread-crumb strong {
+  text-transform: uppercase;
+  color: forestgreen;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-page {
+  width: 100%;
+  padding: 60px 0 50px 0;
+}
+
+.bg-black {
+  background-color: #242424;
+}
+
+.about-introduce .intro_image:hover img {
+  transform: scale(.95);
+  transition: .5s;
+}
+
+.about-introduce .intro_detail .info-intro .title_intro {
+  font-size: 40px;
+  color: #333;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.about-introduce .intro_detail .info-intro .des_intro {
+  font-size: 18px;
+  color: #666;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.about-introduce .intro_detail .info-intro .des_intro::before {
+  content: "";
+  height: 2px;
+  width: 55px;
+  background: #ecad25;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.about-introduce .intro_detail .info-intro .content_intro {
+  margin-top: 35px;
+  line-height: 28px;
+  font-size: 16px;
+  color: #666;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 400;
+}
+
+.galary_inta {
+  margin: 65px 0 0 0;
+}
+
+button.slick-prev {
+  position: absolute;
+  font-size: 36px;
+  left: 20px;
+  top: 50%;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 8px 8px #00000017;
+  opacity: 0;
+  visibility: hidden;
+  transition: .7s;
+  z-index: 1000;
+}
+
+button.slick-next {
+  position: absolute;
+  font-size: 36px;
+  right: 20px;
+  top: 50%;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 8px 8px #00000017;
+  opacity: 0;
+  visibility: hidden;
+  transition: .7s;
+  z-index: 1000;
+}
+
+.slick-prev::before {
+  font-family: 'FontAwesome';
+  content: "\f104";
+  font-size: 30px;
+  color: #222;
+  display: inline-block;
+}
+
+.slick-next::before {
+  font-family: 'FontAwesome';
+  content: "\f105";
+  font-size: 30px;
+  color: #222;
+  display: inline-block;
+}
+
+.slick-prev:hover::before,
+.slick-prev:focus::before,
+.slick-next:hover::before,
+.slick-next:focus::before {
+  opacity: 1;
+}
+
+.galary_inta:hover button.slick-prev {
+  visibility: visible;
+  opacity: 1;
+  left: 0px;
+}
+
+.galary_inta:hover button.slick-next {
+  visibility: visible;
+  opacity: 1;
+  right: 0px;
+}
+
+.content:hover img {
+  transform: scale(1.2);
+}
+
+.content img {
+  transition: all 4s ease;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
+}
+
+.content_text {
+  position: absolute;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .7);
+  transition: all .5s ease;
+  opacity: 0;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content:hover .content_text {
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+@media only screen and (max-width: 1600px) {}
+
+@media only screen and (max-width: 1480px) {}
+
+@media only screen and (max-width: 1280px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {
+  .about-introduce .intro_detail .info-intro .title_intro {
+    font-size: 30px;
+  }
+
+  .about-introduce .intro_detail .info-intro .des_intro {
+    font-size: 16px;
+  }
+
+  .about-introduce .intro_image {
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 575px) {}
+
+/* Instagram */
+
+.instagram__item {
+  background-size: contain;
+  background-position: center;
+  border-right: 1px solid rgb(241, 231, 231);
+}
+
+.instagram__item i {
+  font-size: 30px;
+}

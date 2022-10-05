@@ -1,0 +1,297 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    margin: 0;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+    text-align: left;
+    background-color: #fff
+}
+
+#wrapper {
+    display: flex;
+}
+
+
+
+#accordionSidebar {
+    background-color: #6bff6a;
+    min-height: 100vh;
+    width: 16%;
+}
+
+#content-wrapper {
+    width: 84%;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+.rotate-n-15 {
+    transform: rotate(-15deg)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+/* sidebar */
+
+.sidebar-brand {
+    font-size: 1.25rem;
+}
+
+
+/* sidebar divider */
+
+.sidebar hr.sidebar-divider {
+    border-top: 1px solid #fff;
+
+}
+
+.sidebar hr.sidebar-divider {
+    margin: 0 1rem 1rem;
+}
+
+.sidebar .nav-item {
+    position: relative;
+}
+
+.sidebar .nav-item .nav-link {
+    text-align: center;
+    padding: .75rem 1rem;
+    width: 6.5rem
+}
+
+.sidebar .nav-item .nav-link span {
+    font-size: .65rem;
+    display: block
+}
+
+.sidebar #sidebarToggle {
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    cursor: pointer
+}
+
+#sidebarToggle::after {
+    font-weight: 900;
+    content: '\f104';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 0.1rem;
+    color: #989292;
+}
+
+.sidebar #sidebarToggle {
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.sidebar .sidebar-heading {
+    padding-left: 1rem;
+    font-weight: 800;
+    font-size: .73rem;
+    color: #4b4040;
+}
+
+.sidebar .nav-item .nav-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    width: 14rem;
+}
+
+.sidebar .nav-item .nav-link i {
+    font-size: .85rem;
+    margin-right: .25rem;
+
+}
+
+.sidebar .nav-item .nav-link span {
+    font-size: .85rem;
+    display: inline;
+}
+
+
+.sidebar .nav-item .nav-link[data-toggle=collapse].collapsed::after {
+    content: '\f105';
+}
+
+.sidebar .nav-item .nav-link[data-toggle=collapse]::after {
+    width: 1rem;
+    text-align: center;
+    float: right;
+    vertical-align: 0;
+    border: 0;
+    font-weight: 900;
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+}
+
+/* topbar */
+
+.topbar {
+    height: 4.375rem
+}
+
+.topbar #sidebarToggleTop {
+    height: 2.5rem;
+    width: 2.5rem
+}
+
+.topbar #sidebarToggleTop:hover {
+    background-color: #eaecf4;
+}
+
+.topbar #sidebarToggleTop:active {
+    background-color: #dddfeb;
+}
+
+.topbar>.navbar-search {
+    width: 100%;
+}
+
+.topbar .navbar-search input {
+    font-size: .85rem;
+    height: auto;
+    width: 20rem;
+}
+
+.topbar .nav-item .nav-link {
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+    padding: 0 .75rem
+}
+
+.topbar .dropdown-list .dropdown-item:active {
+    background-color: #eaecf4;
+    color: #3a3b45
+}
+
+.topbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    color: rgba(255, 255, 255, .8)
+}
+
+.topbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+    color: #fff
+}
+
+.topbar.navbar-dark .navbar-nav .nav-item .nav-link:active {
+    color: #fff
+}
+
+.topbar.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #d1d3e2
+}
+
+.topbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: #b7b9cc
+}
+
+.topbar.navbar-light .navbar-nav .nav-item .nav-link:active {
+    color: #858796
+}
+
+#topbar-divider {
+    background-color: #ccc;
+    border: .5px solid #ccc;
+    height: 2.5rem;
+    margin: auto;
+}
+
+.nav-link .badge-danger {
+    margin-bottom: 18px;
+    margin-left: -5px;
+    font-size: 60% !important;
+}
+
+.navbar-search>.input-group>.form-control {
+    flex: 0.5;
+}
+
+.nav-item>#userDropdown {
+    max-width: 26rem;
+}
+
+.navbar>.info-user {
+    padding-left: 23rem;
+}
+
+/* css Card border left  */
+
+.row .border-left-blue {
+    border-left: 5px solid blue;
+}
+
+.row .border-left-green {
+    border-left: 5px solid green;
+}
+
+.row .border-left-red {
+    border-left: 5px solid red;
+}
+
+.row .border-left-yellow {
+    border-left: 5px solid yellow;
+}
+
+/* Responsive */
+
+
+/* Mobile: width < 740px */
+
+@media only screen and (max-width: 46.1875em) {
+
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+
+}
+
+/* Mobile & Tablet: width < 1024px */
+
+@media only screen and (max-width: 63.9375em) {
+
+}
+
+/* PC: width >= 1024px */
+
+@media only screen and (min-width: 64em) and (max-width: 80em) {
+    #accordionSidebar {
+        width: 18%;
+    }
+
+    #content-wrapper {
+        width: 82%;
+    }
+
+    .nav-item > #userDropdown {
+        max-width: 34rem;
+    }
+}
